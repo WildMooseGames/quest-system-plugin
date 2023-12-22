@@ -1,29 +1,29 @@
 # Quest System Plugin for Unreal Engine 4
 
-Quest system plugin developped for an upcoming game
+Quest system plugin developed for an upcoming game
 
 ## How to get
 
 1. Clone this project to ${Project}/Plugins/ of your UE4 project
 
 ```console
-git clone https://github.com/WiseMooseGames/quest-system-plugin.git
+git clone https://github.com/WildMooseGames/quest-system-plugin.git
 ```
 
 ## Features
 
 ### Narrative dialogue system
 
-The dialogue system does not follow the common branching dialogue system pattern that we can find in RPG games for example.
+The dialogue system does not follow the common branching dialogue system pattern we can find in RPG games for example.
 It works as a sequence of Scenes, with Scenes being of two types:
 
 - Static: A static image, usually used to describe a narrative scene
-- Interactive: Multiple clickable images/icons, that player need to choose between
+- Interactive: Multiple clickable images/icons, that the player needs to choose between
 
 ### Quest event system
 
 The Quest event system is a global state management system.
-It can be used to store Events using key-value pair, and act on Event changes.
+It can store Events using key-value pair, and act on Event changes.
 
 ## How to use
 
@@ -102,8 +102,8 @@ Register the delegate on event value changed
 UQuestEventUtility::RegisterToEvent_Bool(this, GlobalEventKey, OnEventStateChanged);
 ```
 
-The delegate will be triggered when the SetEventValue method will be called for with the same EventKey
+The delegate will be triggered when the SetEventValue method is called for with the same EventKey
 
 ## Miscellaneous
 
-The custom dialogue editor is inspired from https://github.com/jinyuliao/GenericGraph
+The custom dialogue editor is inspired by https://github.com/jinyuliao/GenericGraph
